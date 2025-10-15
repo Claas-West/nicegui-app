@@ -5,4 +5,4 @@ def main_page():
     name = ui.input('Your name')
     ui.button('Say Hello', on_click=lambda: ui.notify(f'Hello {name.value}!'))
 
-ui.run()
+ui.run(host='0.0.0.0', port=8080)
